@@ -351,6 +351,7 @@ padding: 22px;
 line-height: 100%;
 letter-spacing: -0.02em;
 color: #292D32;
+font-weight: 500;
 }
 .reviewcard__infodate {
   font-weight: 400;
@@ -360,4 +361,133 @@ letter-spacing: -0.02em;
 color: #8090a4;
 }
 .reviewcard__infostars {
+}
+
+.reviewcard__maincontent {
+}
+.reviewcard__content {
+  font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+letter-spacing: -0.02em;
+margin-bottom: 32px;
+}
+
+.reviewcard__contenttitle {
+  padding-left: 30px;
+   background-position: left center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.02em;
+min-height: 24px;
+}
+.reviewcard__subcontent {
+  margin-top: 33px;
+}
+.reviewcard__disadvantages .reviewcard__contenttitle {
+ 
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.40039 11.9999C2.40039 6.70744 6.70793 2.3999 12.0004 2.3999C17.2928 2.3999 21.6004 6.70744 21.6004 11.9999C21.6004 17.2924 17.2928 21.5999 12.0004 21.5999C6.70793 21.5999 2.40039 17.2924 2.40039 11.9999ZM20.0004 11.9999C20.0004 7.57215 16.4281 3.9999 12.0004 3.9999C7.57264 3.9999 4.00039 7.57215 4.00039 11.9999C4.00039 16.4277 7.57264 19.9999 12.0004 19.9999C16.4281 19.9999 20.0004 16.4277 20.0004 11.9999Z' fill='%238090A4'/%3e%3cpath d='M12.0004 14.3999C10.7871 14.3999 9.82315 14.885 9.18008 15.353C9.00859 15.478 8.89376 15.666 8.86083 15.8756C8.8279 16.0852 8.87958 16.2993 9.0045 16.4708C9.12941 16.6424 9.31734 16.7573 9.52695 16.7903C9.73657 16.8233 9.9507 16.7716 10.1223 16.6468C10.5784 16.3148 11.2137 15.9999 12.0004 15.9999C12.7871 15.9999 13.4224 16.3148 13.8785 16.6468C13.9635 16.7087 14.0598 16.7532 14.1619 16.7779C14.2641 16.8026 14.3701 16.8069 14.474 16.7906C14.5778 16.7743 14.6774 16.7377 14.7671 16.6829C14.8568 16.6281 14.9348 16.5561 14.9967 16.4711C15.0586 16.3862 15.1031 16.2899 15.1277 16.1877C15.1524 16.0855 15.1567 15.9795 15.1403 15.8756C15.124 15.7718 15.0873 15.6722 15.0325 15.5825C14.9777 15.4929 14.9057 15.4149 14.8207 15.353C14.1776 14.885 13.2137 14.3999 12.0004 14.3999Z' fill='%238090A4'/%3e%3cpath d='M8.40039 10.3999C8.08213 10.3999 7.77691 10.5263 7.55186 10.7514C7.32682 10.9764 7.20039 11.2816 7.20039 11.5999C7.20039 11.9182 7.32682 12.2234 7.55186 12.4484C7.77691 12.6735 8.08213 12.7999 8.40039 12.7999C8.71865 12.7999 9.02387 12.6735 9.24892 12.4484C9.47396 12.2234 9.60039 11.9182 9.60039 11.5999C9.60039 11.2816 9.47396 10.9764 9.24892 10.7514C9.02387 10.5263 8.71865 10.3999 8.40039 10.3999Z' fill='%238090A4'/%3e%3cpath d='M15.6004 10.3999C15.2821 10.3999 14.9769 10.5263 14.7519 10.7514C14.5268 10.9764 14.4004 11.2816 14.4004 11.5999C14.4004 11.9182 14.5268 12.2234 14.7519 12.4484C14.9769 12.6735 15.2821 12.7999 15.6004 12.7999C15.9186 12.7999 16.2239 12.6735 16.4489 12.4484C16.674 12.2234 16.8004 11.9182 16.8004 11.5999C16.8004 11.2816 16.674 10.9764 16.4489 10.7514C16.2239 10.5263 15.9186 10.3999 15.6004 10.3999Z' fill='%238090A4'/%3e%3c/svg%3e ");
+}
+.reviewcard__theadvantages .reviewcard__contenttitle {
+
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.40039 11.9999C2.40039 6.70744 6.70793 2.3999 12.0004 2.3999C17.2928 2.3999 21.6004 6.70744 21.6004 11.9999C21.6004 17.2924 17.2928 21.5999 12.0004 21.5999C6.70793 21.5999 2.40039 17.2924 2.40039 11.9999ZM20.0004 11.9999C20.0004 7.57215 16.4281 3.9999 12.0004 3.9999C7.57264 3.9999 4.00039 7.57215 4.00039 11.9999C4.00039 16.4277 7.57264 19.9999 12.0004 19.9999C16.4281 19.9999 20.0004 16.4277 20.0004 11.9999Z' fill='%230CBA7A'/%3e%3cpath d='M8.40039 10.3999C8.08213 10.3999 7.77691 10.5263 7.55186 10.7514C7.32682 10.9764 7.20039 11.2816 7.20039 11.5999C7.20039 11.9182 7.32682 12.2234 7.55186 12.4484C7.77691 12.6735 8.08213 12.7999 8.40039 12.7999C8.71865 12.7999 9.02387 12.6735 9.24892 12.4484C9.47396 12.2234 9.60039 11.9182 9.60039 11.5999C9.60039 11.2816 9.47396 10.9764 9.24892 10.7514C9.02387 10.5263 8.71865 10.3999 8.40039 10.3999Z' fill='%230CBA7A'/%3e%3cpath d='M12.0004 16.8003C10.7871 16.8003 9.82315 16.3152 9.18008 15.8472C9.00859 15.7222 8.89376 15.5342 8.86083 15.3246C8.8279 15.115 8.87958 14.9009 9.0045 14.7293C9.12941 14.5578 9.31734 14.4429 9.52695 14.4099C9.73657 14.3769 9.9507 14.4285 10.1223 14.5534C10.5784 14.8854 11.2137 15.2003 12.0004 15.2003C12.7871 15.2003 13.4224 14.8854 13.8785 14.5534C13.9635 14.4915 14.0598 14.4469 14.1619 14.4223C14.2641 14.3976 14.3701 14.3933 14.474 14.4096C14.5778 14.4259 14.6774 14.4625 14.7671 14.5173C14.8568 14.5721 14.9348 14.6441 14.9967 14.729C15.0586 14.814 15.1031 14.9103 15.1277 15.0125C15.1524 15.1147 15.1567 15.2207 15.1403 15.3246C15.124 15.4284 15.0873 15.528 15.0325 15.6177C14.9777 15.7073 14.9057 15.7853 14.8207 15.8472C14.1776 16.3152 13.2137 16.8003 12.0004 16.8003Z' fill='%230CBA7A'/%3e%3cpath d='M15.6004 10.3999C15.2821 10.3999 14.9769 10.5263 14.7519 10.7514C14.5268 10.9764 14.4004 11.2816 14.4004 11.5999C14.4004 11.9182 14.5268 12.2234 14.7519 12.4484C14.9769 12.6735 15.2821 12.7999 15.6004 12.7999C15.9186 12.7999 16.2239 12.6735 16.4489 12.4484C16.674 12.2234 16.8004 11.9182 16.8004 11.5999C16.8004 11.2816 16.674 10.9764 16.4489 10.7514C16.2239 10.5263 15.9186 10.3999 15.6004 10.3999Z' fill='%230CBA7A'/%3e%3c/svg%3e ");
+}
+
+.btn_reply {
+  font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: -0.02em;
+background: none;
+background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8 3L3 8L8 13V9H10C14.9826 9 19 13.0174 19 18V21H21V18C21 11.9366 16.0634 7 10 7H8V3Z' fill='%238598B4'/%3e%3c/svg%3e ");
+background-position: left center;
+background-repeat: no-repeat;
+padding-left: 36px;
+text-decoration: none;
+border: none;
+background-color: none;
+display: flex;
+}
+
+.reviewcard__reaction  {
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.btn_react {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+
+}
+
+.btn_react svg path {
+  transition: all 0.3s ease;
+}
+
+.reviewcard__reactions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.reviewcard__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviewcard__reactiontext {
+  font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: -0.02em;
+color: #8598b4;
+}
+.reviewcard__reaction.active .reviewcard__reactiontext {
+ 
+color: #292D32;
+}
+
+.btn_react:hover svg path {
+ fill:#3B435A;
+}
+.product-main__tabs .tabs-content__item .reviewblock img {
+  margin: unset;
+}
+.reviewblock__item {
+  margin-bottom: 12px;
+}
+.reviewblock__nested {
+  margin-top: 10px;
+  padding-left: 44px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.3'%3e%3cpath d='M3 8L8 3L13 8L9 8L9 10C9 14.9826 13.0174 19 18 19L21 19L21 21L18 21C11.9366 21 7 16.0634 7 10L7 8L3 8Z' fill='%23272F3F' fill-opacity='0.6'/%3e%3c/g%3e%3c/svg%3e ");
+  background-position: left top 20px;
+  background-repeat: no-repeat;
+}
+.reviewblock__nested .reviewcard__main {
+  display: flex;
+  gap: 29px;
+  align-items: flex-start;
+}
+.reviewblock__nested .reviewcard__avatar {
+  max-width: 108px;
+  width: unset;
+  height: unset;
+  max-height: 60px;
+  border-radius: 0;
+  border: 1px solid #edf0f6;
+border-radius: 12px;
+background: #Fff;
+}
+.reviewcard__content {
+  margin-bottom: 16px;
+}
+
+[data-user="UNATHORIZED"] .btn_react {
+ pointer-events: none;
 }

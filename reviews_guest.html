@@ -4117,7 +4117,7 @@
             <div class="tabs-content">
               <div class="tabs-content__item active" data-tab="1">
                 <div class="info-content">
-                  <div class="reviewblock">
+                  <div class="reviewblock" data-user="UNATHORIZED">
                     <div class="reviewblock__head">
                       <div class="reviewblock__header">
                         <div class="reviewblock__title">Отзывы о товаре </div>
@@ -4168,37 +4168,306 @@
                       <div class="reviewblock__items">
                         <div class="reviewblock__item">
                           <div class="reviewcard">
-                            <div class="reviewcard__header">
-                              <div class="reviewcard__avatar">
-                                <img src="/img/avatar.png" alt="">
-                              </div>
-                              <div class="reviewcard__info">
-                                <div class="reviewcard__infomain">
-                                  <div class="reviewcard__infoname">Анжела</div>
-                                  <div class="reviewcard__infodate">26.16.2025, 20:20</div>
+                            <div class="reviewcard__main">
+                              <div class="reviewcard__header">
+                                <div class="reviewcard__avatar">
+                                  <img src="/img/avatar.png" alt="">
                                 </div>
-                                <div class="reviewcard__infostars">
-                                  <div class="cardrating" data-rating="4">
-                                    <div class="cardrating__item">
-                                      <div class="cardrating__form">
-                                        <span class="score">
-                                          <div class="score-wrap" data-stars>
-                                            <span class="star " data-star="1"></span>
-                                            <span class="star " data-star="2"></span>
-                                            <span class="star " data-star="3"></span>
-                                            <span class="star " data-star="4"></span>
-                                            <span class="star " data-star="5"></span>                                           
-                                          </div>
-                                        </span>
+                                <div class="reviewcard__info">
+                                  <div class="reviewcard__infomain">
+                                    <div class="reviewcard__infoname">Анжела</div>
+                                    <div class="reviewcard__infodate">26.16.2025, 20:20</div>
+                                  </div>
+                                  <div class="reviewcard__infostars">
+                                    <div class="cardrating" data-rating="4">
+                                      <div class="cardrating__item">
+                                        <div class="cardrating__form">
+                                          <span class="score">
+                                            <div class="score-wrap" data-stars>
+                                              <span class="star " data-star="1"></span>
+                                              <span class="star " data-star="2"></span>
+                                              <span class="star " data-star="3"></span>
+                                              <span class="star " data-star="4"></span>
+                                              <span class="star " data-star="5"></span>
+                                            </div>
+                                          </span>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
+                                </div><!-- /.reviewcard__info -->
+                              </div><!-- /.reviewcard__header -->
+                              <div class="reviewcard__body">
+                                <div class="reviewcard__maincontent">
+                                  <div class="reviewcard__content">Отличный химикат, быстро доставили, в хорошей
+                                    упаковке)) Буду заказывать еще!!!</div>
                                 </div>
-                              </div><!-- /.reviewcard__info -->
-                            </div><!-- /.reviewcard__header -->
-                            <div class="reviewcard__body"></div><!-- /.reviewcard__body -->
-                            <div class="reviewcard__footer"></div><!-- /.reviewcard__footer -->
+                                <div class="reviewcard__subcontent">
+                                   <div class="reviewcard__theadvantages">
+                                  <div class="reviewcard__contenttitle">Достоинства</div>
+                                  <div class="reviewcard__content">Приятный запах, быстрое действие, </div>
+                                </div>
+                                <div class="reviewcard__disadvantages">
+                                  <div class="reviewcard__contenttitle">Недостатки</div>
+                                  <div class="reviewcard__content">Не обнаружила</div>
+                                </div>
+                                </div><!-- /.reviewcard__subcontent -->
+                               
+                              </div><!-- /.reviewcard__body -->
+                            </div><!-- /.reviewcard__main -->
+                            <div class="reviewcard__footer">
+                              <div class="reviewcard__reply">
+                                <a href="#enter_modal" data-fancybox="" class="btn_reply js-simple-modal">Ответить</a>
+                              </div>
+                              <div class="reviewcard__reactions">
+                                <div class="reviewcard__reaction active">
+                                  <button class="btn_react">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M14.1699 1.6133C13.7875 1.61505 13.4048 1.7627 13.1133 2.0547L7.58398 7.59572C7.20998 7.97072 7 8.47783 7 9.00783V19C7 20.105 7.895 21 9 21H17.9922C18.7912 21 19.5141 20.5241 19.8301 19.7891L22.8379 12.7871C22.9449 12.5381 23 12.2691 23 11.9981V10C23 8.89501 22.105 8.00001 21 8.00001H14.6484L15.6426 3.43556C15.7526 2.93156 15.5955 2.40594 15.2285 2.04494C14.9345 1.75594 14.5523 1.61155 14.1699 1.6133ZM2 9.00001C1.448 9.00001 1 9.44801 1 10V20C1 20.552 1.448 21 2 21H4C4.552 21 5 20.552 5 20V10C5 9.44801 4.552 9.00001 4 9.00001H2Z"
+                                        fill="#CED6E2" />
+                                    </svg>
+                                  </button>
+                                  <span class="reviewcard__reactiontext ">14</span>
+                                </div><!-- /.reviewcard__reaction -->
+                                <div class="reviewcard__reaction">
+                                  <button class="btn_react">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M9.83008 22.3867C10.2125 22.385 10.5952 22.2373 10.8867 21.9453L16.416 16.4043C16.79 16.0293 17 15.5222 17 14.9922V4.99999C17 3.89499 16.105 2.99999 15 2.99999H6.00781C5.20881 2.99999 4.48592 3.47592 4.16992 4.21092L1.16211 11.2129C1.05511 11.4619 1 11.7309 1 12.0019V14C1 15.105 1.895 16 3 16H9.35156L8.35742 20.5644C8.24742 21.0684 8.40448 21.5941 8.77148 21.9551C9.06548 22.2441 9.4477 22.3885 9.83008 22.3867ZM22 15C22.552 15 23 14.552 23 14V3.99999C23 3.44799 22.552 2.99999 22 2.99999H20C19.448 2.99999 19 3.44799 19 3.99999V14C19 14.552 19.448 15 20 15H22Z"
+                                        fill="#CED6E2" />
+                                    </svg>
+
+                                  </button>
+                                  <span class="reviewcard__reactiontext ">0</span>
+                                </div><!-- /.reviewcard__reaction -->
+
+                              </div><!-- /.reviewcard__reaction -->
+                            </div><!-- /.reviewcard__footer -->
                           </div><!-- /.reviewcard -->
+                          <div class="reviewblock__item reviewblock__nested">
+                            <div class="reviewcard">
+                              <div class="reviewcard__main">
+                                <div class="reviewcard__header">
+                                  <div class="reviewcard__avatar">
+                                    <img src="/img/Group1632526652.svg" alt="">
+                                  </div>
+                                </div><!-- /.reviewcard__header -->
+                                <div class="reviewcard__body">
+                                  <div class="reviewcard__info">
+                                    <div class="reviewcard__infomain">
+                                      <div class="reviewcard__infoname">Интернет магазин Nikadent</div>
+                                    </div>
+                                  </div><!-- /.reviewcard__info -->
+                                  <div class="reviewcard__maincontent">
+                                    <div class="reviewcard__content">Анжела, благодарим вас за столь тепый отзыв!!
+                                      <br>Будем рады видеть вас снова!
+                                    </div>
+                                  </div>
+                                </div><!-- /.reviewcard__body -->
+                              </div><!-- /.reviewcard__main -->
+
+                              <div class="reviewcard__footer">
+                                <div class="reviewcard__reply">
+                                  <a href="#enter_modal" data-fancybox="" class="btn_reply js-simple-modal">Ответить</a>
+                                </div>
+                                <div class="reviewcard__reactions">
+                                  <div class="reviewcard__reaction active">
+                                    <button class="btn_react">
+                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                          d="M14.1699 1.6133C13.7875 1.61505 13.4048 1.7627 13.1133 2.0547L7.58398 7.59572C7.20998 7.97072 7 8.47783 7 9.00783V19C7 20.105 7.895 21 9 21H17.9922C18.7912 21 19.5141 20.5241 19.8301 19.7891L22.8379 12.7871C22.9449 12.5381 23 12.2691 23 11.9981V10C23 8.89501 22.105 8.00001 21 8.00001H14.6484L15.6426 3.43556C15.7526 2.93156 15.5955 2.40594 15.2285 2.04494C14.9345 1.75594 14.5523 1.61155 14.1699 1.6133ZM2 9.00001C1.448 9.00001 1 9.44801 1 10V20C1 20.552 1.448 21 2 21H4C4.552 21 5 20.552 5 20V10C5 9.44801 4.552 9.00001 4 9.00001H2Z"
+                                          fill="#CED6E2" />
+                                      </svg>
+                                    </button>
+                                    <span class="reviewcard__reactiontext ">14</span>
+                                  </div><!-- /.reviewcard__reaction -->
+                                  <div class="reviewcard__reaction">
+                                    <button class="btn_react">
+                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                          d="M9.83008 22.3867C10.2125 22.385 10.5952 22.2373 10.8867 21.9453L16.416 16.4043C16.79 16.0293 17 15.5222 17 14.9922V4.99999C17 3.89499 16.105 2.99999 15 2.99999H6.00781C5.20881 2.99999 4.48592 3.47592 4.16992 4.21092L1.16211 11.2129C1.05511 11.4619 1 11.7309 1 12.0019V14C1 15.105 1.895 16 3 16H9.35156L8.35742 20.5644C8.24742 21.0684 8.40448 21.5941 8.77148 21.9551C9.06548 22.2441 9.4477 22.3885 9.83008 22.3867ZM22 15C22.552 15 23 14.552 23 14V3.99999C23 3.44799 22.552 2.99999 22 2.99999H20C19.448 2.99999 19 3.44799 19 3.99999V14C19 14.552 19.448 15 20 15H22Z"
+                                          fill="#CED6E2" />
+                                      </svg>
+
+                                    </button>
+                                    <span class="reviewcard__reactiontext ">0</span>
+                                  </div><!-- /.reviewcard__reaction -->
+
+                                </div><!-- /.reviewcard__reaction -->
+                              </div><!-- /.reviewcard__footer -->
+                            </div><!-- /.reviewcard -->
+                          </div><!-- /.reviewblock__item -->
+                        </div><!-- /.reviewblock__item -->
+                        <div class="reviewblock__item">
+                          <div class="reviewcard">
+                            <div class="reviewcard__main">
+                              <div class="reviewcard__header">
+                                <div class="reviewcard__avatar">
+                                  <img src="/img/avatar.png" alt="">
+                                </div>
+                                <div class="reviewcard__info">
+                                  <div class="reviewcard__infomain">
+                                    <div class="reviewcard__infoname">Анжела</div>
+                                    <div class="reviewcard__infodate">26.16.2025, 20:20</div>
+                                  </div>
+                                  <div class="reviewcard__infostars">
+                                    <div class="cardrating" data-rating="3">
+                                      <div class="cardrating__item">
+                                        <div class="cardrating__form">
+                                          <span class="score">
+                                            <div class="score-wrap" data-stars>
+                                              <span class="star " data-star="1"></span>
+                                              <span class="star " data-star="2"></span>
+                                              <span class="star " data-star="3"></span>
+                                              <span class="star " data-star="4"></span>
+                                              <span class="star " data-star="5"></span>
+                                            </div>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div><!-- /.reviewcard__info -->
+                              </div><!-- /.reviewcard__header -->
+                              <div class="reviewcard__body">
+                                <div class="reviewcard__maincontent">
+                                  <div class="reviewcard__content">Отличный химикат, быстро доставили, в хорошей
+                                    упаковке)) Буду заказывать еще!!!</div>
+                                </div>
+                                <div class="reviewcard__subcontent">
+                                   <div class="reviewcard__theadvantages">
+                                  <div class="reviewcard__contenttitle">Достоинства</div>
+                                  <div class="reviewcard__content">Приятный запах, быстрое действие, </div>
+                                </div>
+                                <div class="reviewcard__disadvantages">
+                                  <div class="reviewcard__contenttitle">Недостатки</div>
+                                  <div class="reviewcard__content">Не обнаружила</div>
+                                </div>
+                                </div><!-- /.reviewcard__subcontent -->
+                               
+                              </div><!-- /.reviewcard__body -->
+                            </div><!-- /.reviewcard__main -->
+                            <div class="reviewcard__footer">
+                              <div class="reviewcard__reply">
+                                <a href="#enter_modal" data-fancybox="" class="btn_reply js-simple-modal">Ответить</a>
+                              </div>
+                              <div class="reviewcard__reactions">
+                                <div class="reviewcard__reaction active">
+                                  <button class="btn_react">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M14.1699 1.6133C13.7875 1.61505 13.4048 1.7627 13.1133 2.0547L7.58398 7.59572C7.20998 7.97072 7 8.47783 7 9.00783V19C7 20.105 7.895 21 9 21H17.9922C18.7912 21 19.5141 20.5241 19.8301 19.7891L22.8379 12.7871C22.9449 12.5381 23 12.2691 23 11.9981V10C23 8.89501 22.105 8.00001 21 8.00001H14.6484L15.6426 3.43556C15.7526 2.93156 15.5955 2.40594 15.2285 2.04494C14.9345 1.75594 14.5523 1.61155 14.1699 1.6133ZM2 9.00001C1.448 9.00001 1 9.44801 1 10V20C1 20.552 1.448 21 2 21H4C4.552 21 5 20.552 5 20V10C5 9.44801 4.552 9.00001 4 9.00001H2Z"
+                                        fill="#CED6E2" />
+                                    </svg>
+                                  </button>
+                                  <span class="reviewcard__reactiontext ">14</span>
+                                </div><!-- /.reviewcard__reaction -->
+                                <div class="reviewcard__reaction">
+                                  <button class="btn_react">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M9.83008 22.3867C10.2125 22.385 10.5952 22.2373 10.8867 21.9453L16.416 16.4043C16.79 16.0293 17 15.5222 17 14.9922V4.99999C17 3.89499 16.105 2.99999 15 2.99999H6.00781C5.20881 2.99999 4.48592 3.47592 4.16992 4.21092L1.16211 11.2129C1.05511 11.4619 1 11.7309 1 12.0019V14C1 15.105 1.895 16 3 16H9.35156L8.35742 20.5644C8.24742 21.0684 8.40448 21.5941 8.77148 21.9551C9.06548 22.2441 9.4477 22.3885 9.83008 22.3867ZM22 15C22.552 15 23 14.552 23 14V3.99999C23 3.44799 22.552 2.99999 22 2.99999H20C19.448 2.99999 19 3.44799 19 3.99999V14C19 14.552 19.448 15 20 15H22Z"
+                                        fill="#CED6E2" />
+                                    </svg>
+
+                                  </button>
+                                  <span class="reviewcard__reactiontext ">0</span>
+                                </div><!-- /.reviewcard__reaction -->
+
+                              </div><!-- /.reviewcard__reaction -->
+                            </div><!-- /.reviewcard__footer -->
+                          </div><!-- /.reviewcard -->
+                         
+                        </div><!-- /.reviewblock__item -->
+                        <div class="reviewblock__item">
+                          <div class="reviewcard">
+                            <div class="reviewcard__main">
+                              <div class="reviewcard__header">
+                                <div class="reviewcard__avatar">
+                                  <img src="/img/avatar.png" alt="">
+                                </div>
+                                <div class="reviewcard__info">
+                                  <div class="reviewcard__infomain">
+                                    <div class="reviewcard__infoname">Анжела</div>
+                                    <div class="reviewcard__infodate">26.16.2025, 20:20</div>
+                                  </div>
+                                  <div class="reviewcard__infostars">
+                                    <div class="cardrating" data-rating="5">
+                                      <div class="cardrating__item">
+                                        <div class="cardrating__form">
+                                          <span class="score">
+                                            <div class="score-wrap" data-stars>
+                                              <span class="star " data-star="1"></span>
+                                              <span class="star " data-star="2"></span>
+                                              <span class="star " data-star="3"></span>
+                                              <span class="star " data-star="4"></span>
+                                              <span class="star " data-star="5"></span>
+                                            </div>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div><!-- /.reviewcard__info -->
+                              </div><!-- /.reviewcard__header -->
+                              <div class="reviewcard__body">
+                                <div class="reviewcard__maincontent">
+                                  <div class="reviewcard__content">Отличный химикат, быстро доставили, в хорошей
+                                    упаковке)) Буду заказывать еще!!!</div>
+                                </div>
+                                <div class="reviewcard__subcontent">
+                                   <div class="reviewcard__theadvantages">
+                                  <div class="reviewcard__contenttitle">Достоинства</div>
+                                  <div class="reviewcard__content">Приятный запах, быстрое действие, </div>
+                                </div>
+                                <div class="reviewcard__disadvantages">
+                                  <div class="reviewcard__contenttitle">Недостатки</div>
+                                  <div class="reviewcard__content">Не обнаружила</div>
+                                </div>
+                                </div><!-- /.reviewcard__subcontent -->
+                               
+                              </div><!-- /.reviewcard__body -->
+                            </div><!-- /.reviewcard__main -->
+                            <div class="reviewcard__footer">
+                              <div class="reviewcard__reply">
+                                <a href="#enter_modal" data-fancybox="" class="btn_reply js-simple-modal">Ответить</a>
+                              </div>
+                              <div class="reviewcard__reactions">
+                                <div class="reviewcard__reaction active">
+                                  <button class="btn_react">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M14.1699 1.6133C13.7875 1.61505 13.4048 1.7627 13.1133 2.0547L7.58398 7.59572C7.20998 7.97072 7 8.47783 7 9.00783V19C7 20.105 7.895 21 9 21H17.9922C18.7912 21 19.5141 20.5241 19.8301 19.7891L22.8379 12.7871C22.9449 12.5381 23 12.2691 23 11.9981V10C23 8.89501 22.105 8.00001 21 8.00001H14.6484L15.6426 3.43556C15.7526 2.93156 15.5955 2.40594 15.2285 2.04494C14.9345 1.75594 14.5523 1.61155 14.1699 1.6133ZM2 9.00001C1.448 9.00001 1 9.44801 1 10V20C1 20.552 1.448 21 2 21H4C4.552 21 5 20.552 5 20V10C5 9.44801 4.552 9.00001 4 9.00001H2Z"
+                                        fill="#CED6E2" />
+                                    </svg>
+                                  </button>
+                                  <span class="reviewcard__reactiontext ">14</span>
+                                </div><!-- /.reviewcard__reaction -->
+                                <div class="reviewcard__reaction">
+                                  <button class="btn_react">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M9.83008 22.3867C10.2125 22.385 10.5952 22.2373 10.8867 21.9453L16.416 16.4043C16.79 16.0293 17 15.5222 17 14.9922V4.99999C17 3.89499 16.105 2.99999 15 2.99999H6.00781C5.20881 2.99999 4.48592 3.47592 4.16992 4.21092L1.16211 11.2129C1.05511 11.4619 1 11.7309 1 12.0019V14C1 15.105 1.895 16 3 16H9.35156L8.35742 20.5644C8.24742 21.0684 8.40448 21.5941 8.77148 21.9551C9.06548 22.2441 9.4477 22.3885 9.83008 22.3867ZM22 15C22.552 15 23 14.552 23 14V3.99999C23 3.44799 22.552 2.99999 22 2.99999H20C19.448 2.99999 19 3.44799 19 3.99999V14C19 14.552 19.448 15 20 15H22Z"
+                                        fill="#CED6E2" />
+                                    </svg>
+
+                                  </button>
+                                  <span class="reviewcard__reactiontext ">0</span>
+                                </div><!-- /.reviewcard__reaction -->
+
+                              </div><!-- /.reviewcard__reaction -->
+                            </div><!-- /.reviewcard__footer -->
+                          </div><!-- /.reviewcard -->
+                         
                         </div><!-- /.reviewblock__item -->
                       </div><!-- /.reviewblock__items -->
                     </div><!-- /.reviewblock__body -->
