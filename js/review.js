@@ -51,49 +51,74 @@ $(document).ready(function () {
     }); */
   });
 
-  document.querySelectorAll('.modal_stars').forEach(starsContainer => {
-  const radios = starsContainer.querySelectorAll('input[type="radio"]');
+  document.querySelectorAll('.modal_stars, .modal_star').forEach(group => {
+  // Для каждого контейнера с классом `.modal_stars`
+  if (group.classList.contains('modal_stars')) {
+    const radios = group.querySelectorAll('input[type="radio"]');
+    let currentRating = 0;
 
-  let selectedRating = 0; // текущий выбранный рейтинг (при клике)
-  
-  // Изначально определяем выбранную оценку
-  const checked = starsContainer.querySelector('input[type="radio"]:checked');
-  if (checked) {
-    selectedRating = parseInt(checked.value);
-  }
+    // Изначально берем выбранное
+    const checked = group.querySelector('input[type="radio"]:checked');
+    if (checked) {
+      currentRating = parseInt(checked.value);
+    }
 
-  // Функция подсветки звезд до count
-  function setStars(count) {
+    // Функция подсветки
+    function setStars(count) {
+      radios.forEach(r => {
+        const starWrapper = r.closest('.modal_star');
+        starWrapper.classList.remove('active');
+        if (parseInt(r.value) <= count) {
+          starWrapper.classList.add('active');
+        }
+      });
+    }
+
+    // Изначально подсветка
+    setStars(currentRating);
+
+    // Наведение и выбор
     radios.forEach(r => {
-      const starWrapper = r.closest('.modal_star');
-      starWrapper.classList.remove('active');
-      if (parseInt(r.value) <= count) {
-        starWrapper.classList.add('active');
-      }
+      const parentLabel = r.parentElement;
+
+      parentLabel.addEventListener('mouseenter', () => {
+        const hoverVal = parseInt(r.value);
+        setStars(hoverVal);
+      });
+
+      parentLabel.addEventListener('mouseleave', () => {
+        setStars(currentRating);
+      });
+
+      r.addEventListener('change', () => {
+        currentRating = parseInt(r.value);
+        setStars(currentRating);
+      });
     });
   }
 
-  // Изначочно подсвечиваем выбранную
-  setStars(selectedRating);
+  // Для отдельных элементов .modal_star (если есть)
+  if (group.classList.contains('modal_star')) {
+    const r = group.querySelector('input[type="radio"]');
+    if (!r) return;
+    let fixedRating = parseInt(r.value);
 
-  // Обработчики наведения
-  radios.forEach(r => {
-    const parentLabel = r.parentElement;
-
-    parentLabel.addEventListener('mouseenter', () => {
-      const hoverVal = parseInt(r.value);
-      setStars(hoverVal);
-    });
-    
-    parentLabel.addEventListener('mouseleave', () => {
-      setStars(selectedRating);
+    // Наведение
+    group.addEventListener('mouseenter', () => {
+      group.classList.add('hovered');
     });
 
-    // Обработка выбора
+    group.addEventListener('mouseleave', () => {
+      group.classList.remove('hovered');
+    });
+
+    // Можно также добавить подсветку, если нужно
+    // Но для простоты выбираем только цензурное выделение при hover
+    // Или делаем так же, как внутри `.modal_stars`
+
     r.addEventListener('change', () => {
-      selectedRating = parseInt(r.value);
-      setStars(selectedRating);
+      fixedRating = parseInt(r.value);
     });
-  });
+  }
 });
 });

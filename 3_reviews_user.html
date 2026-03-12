@@ -4117,7 +4117,7 @@
             <div class="tabs-content">
               <div class="tabs-content__item active" data-tab="1">
                 <div class="info-content">
-                  <div class="reviewblock" data-user="UNATHORIZED">
+                  <div class="reviewblock">
                     <div class="reviewblock__head">
                       <div class="reviewblock__header">
                         <div class="reviewblock__title">Отзывы о товаре </div>
@@ -4154,18 +4154,103 @@
                           </div>
                           <!-- /.dropdownselect -->
                         </div><!-- /.reviewblock__sort -->
-                        <div class="reviewblock__auth">
-                          <a href="#enter_modal" data-fancybox="" class="reviewblock_authlink js-simple-modal">
-                            Войдите или зарегистрируйтесь
+                        <div class="reviewblock__leavereview">
+                          <a href="#modal_review" data-fancybox="" class="btn-primary js-simple-modal">
+                            Написать отзыв
                           </a>
-                          <span class="reviewblock_authtext">
-                            , чтобы оставить отзыв о товаре
-                          </span>
+                          <div id="modal_review" class="simple-modal backcall-modal review-modal"
+                            style="display: none;">
+                            <div class="modal-wrapper">
+                              <div>
+                                <p></p>
+                                <div class="modal-title">Оставить отзыв</div>
+                                <div class="modal-content">
+
+                                  <form class="reviewblock-form" name="REVIEW_FORM" action="#" method="POST"
+                                    enctype="multipart/form-data">
+
+                                    <div class="modal_stars">
+                                      <div class="modal_star">
+                                        <input type="radio" name="modal_rating" value="1" id="replyform_0_star_1">
+                                        <label for="replyform_0_star_1">
+                                          <span class="modal_starimg"></span>
+                                          <span class="modal_startext">Плохо!</span>
+                                        </label>
+                                      </div>
+
+                                      <div class="modal_star">
+                                        <input type="radio" name="modal_rating" value="2" id="replyform_0_star_2">
+                                        <label for="replyform_0_star_2">
+                                          <span class="modal_starimg"></span>
+                                          <span class="modal_startext">Так себе</span>
+                                        </label>
+                                      </div>
+                                      <div class="modal_star">
+                                        <input type="radio" name="modal_rating" value="3" 
+                                          id="replyform_0_star_3">
+                                        <label for="replyform_0_star_3">
+                                          <span class="modal_starimg"></span>
+                                          <span class="modal_startext">Нормально!</span>
+                                        </label>
+                                      </div>
+                                      <div class="modal_star">
+                                        <input type="radio" name="modal_rating" value="4" id="replyform_0_star_4">
+                                        <label for="replyform_0_star_4">
+                                          <span class="modal_starimg"></span>
+                                          <span class="modal_startext">Хорошо</span>
+                                        </label>
+                                      </div>
+
+                                      <div class="modal_star ">
+                                        <input type="radio" name="modal_rating" value="5" id="replyform_0_star_5">
+                                        <label for="replyform_0_star_5">
+                                          <span class="modal_starimg"></span>
+                                          <span class="modal_startext">Отлично!</span>
+                                        </label>
+                                      </div>
+
+                                    </div>
+                                    <div class="input-group label-group mb-4 modal_input">
+                                      <input placeholder="Преимущества" type="text" name="form_text_1"
+                                        value="">
+                                    </div>
+
+                                    <div class="input-group label-group mb-4 modal_input">
+                                      <input placeholder="Недостатки" type="text" name="form_text_2"
+                                        value="">
+                                    </div>
+                                    <div class="input-group label-group mb-4 modal_input">
+                                      <textarea placeholder="Комментарии" type="text" name="form_text_3"
+                                        rows="5"></textarea>
+                                    </div>
+
+                                    <div class="modal__check">
+                                      <div class="input-group check-group">
+                                        <label>
+                                          <input type="checkbox" name="check_replyform_1" required="">
+                                          <span class="label">Я даю согласие на публикацию отзыва на сайте и соглашаюсь
+                                            с <a href="/politic/" target="_blank">Политикой
+                                              конфиденциальности</a></span>
+                                        </label>
+                                      </div>
+                                      <div class="modal_submit">
+                                        <button type="submit" class="btn-primary">Разместить отзыв</button>
+                                      </div><!-- /.modal_submit -->
+                                    </div><!-- /.modal__check -->
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div><!-- /.reviewblock__auth -->
                       </div><!-- /.reviewblock__panel -->
                     </div><!-- /.reviewblock__header -->
                     <div class="reviewblock__body">
                       <div class="reviewblock__items">
+                        <!-- ТЗ пункт 3.2 У своего оставленного отзыва пользователь видит кнопки "ответить" и "редактировать" https://skrinshoter.ru/saN3AptHTZr, ховеры при наведении
+                        При клике на  "редактировать" https://skrinshoter.ru/saNZlGoRNab появляется заполненная форма отзыва, с возможностью редактировать оценку и заполненную информацию в полях, которые пользователь ранее оставил https://skrinshoter.ru/saNXqwAV28J -->
+
+                        <!-- этот отзыв СВОЙ -->
                         <div class="reviewblock__item">
                           <div class="reviewcard">
                             <div class="reviewcard__main">
@@ -4203,33 +4288,36 @@
                                     упаковке)) Буду заказывать еще!!!</div>
                                 </div>
                                 <div class="reviewcard__subcontent">
-                                   <div class="reviewcard__theadvantages">
-                                  <div class="reviewcard__contenttitle">Достоинства</div>
-                                  <div class="reviewcard__content">Приятный запах, быстрое действие, </div>
-                                </div>
-                                <div class="reviewcard__disadvantages">
-                                  <div class="reviewcard__contenttitle">Недостатки</div>
-                                  <div class="reviewcard__content">Не обнаружила</div>
-                                </div>
+                                  <div class="reviewcard__theadvantages">
+                                    <div class="reviewcard__contenttitle">Достоинства</div>
+                                    <div class="reviewcard__content">Приятный запах, быстрое действие, </div>
+                                  </div>
+                                  <div class="reviewcard__disadvantages">
+                                    <div class="reviewcard__contenttitle">Недостатки</div>
+                                    <div class="reviewcard__content">Не обнаружила</div>
+                                  </div>
                                 </div><!-- /.reviewcard__subcontent -->
-                               
+
                               </div><!-- /.reviewcard__body -->
                             </div><!-- /.reviewcard__main -->
                             <div class="reviewcard__footer">
                               <div class="reviewcard__reply">
-                                <a href="#enter_modal" data-fancybox="" class="btn_reply js-simple-modal">Ответить</a>
+                                <button class="btn_reply" data-togglebutton="replyform_1"
+                                  data-author="@Nikadent, ">Ответить</button>
+                                <a href="#modal_replyform_1" data-fancybox=""
+                                  class="btn_reply btn_edit js-simple-modal">Редактировать</a>
                               </div>
                               <div class="reviewcard__reactions">
-                                <div class="reviewcard__reaction active">
+                                <div class="reviewcard__reaction active_like">
                                   <button class="btn_react">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
-                                      <path
+                                      <path 
                                         d="M14.1699 1.6133C13.7875 1.61505 13.4048 1.7627 13.1133 2.0547L7.58398 7.59572C7.20998 7.97072 7 8.47783 7 9.00783V19C7 20.105 7.895 21 9 21H17.9922C18.7912 21 19.5141 20.5241 19.8301 19.7891L22.8379 12.7871C22.9449 12.5381 23 12.2691 23 11.9981V10C23 8.89501 22.105 8.00001 21 8.00001H14.6484L15.6426 3.43556C15.7526 2.93156 15.5955 2.40594 15.2285 2.04494C14.9345 1.75594 14.5523 1.61155 14.1699 1.6133ZM2 9.00001C1.448 9.00001 1 9.44801 1 10V20C1 20.552 1.448 21 2 21H4C4.552 21 5 20.552 5 20V10C5 9.44801 4.552 9.00001 4 9.00001H2Z"
                                         fill="#CED6E2" />
                                     </svg>
                                   </button>
-                                  <span class="reviewcard__reactiontext ">14</span>
+                                  <span class="reviewcard__reactiontext " >14</span>
                                 </div><!-- /.reviewcard__reaction -->
                                 <div class="reviewcard__reaction">
                                   <button class="btn_react">
@@ -4247,6 +4335,125 @@
                               </div><!-- /.reviewcard__reaction -->
                             </div><!-- /.reviewcard__footer -->
                           </div><!-- /.reviewcard -->
+
+
+                          <!-- ТЗ пункт 3.5 При клике у любого комментария на "ответить" https://skrinshoter.ru/saMQHU9u21k появляется поле для ответа на комментарий как в макете https://skrinshoter.ru/saMId74B0Xw -->
+                          <div class="reviewblock__replyform" data-toggleobject="replyform_1" hidden>
+                            <div class="replyform">
+                              <form action="#">
+                                <div class="replyform__form">
+                                  <div class="replyform__main">
+                                    <div class="replyform__input">
+                                      <!--  <div class="fake_textarea" data-input="replyformtext" contenteditable><span></span></div>
+                                      <input type="hidden" id="text_replyform_1" name="text_replyform_1"> -->
+
+                                      <textarea data-input="replyformtext" name="replyform_1" id="replyform_1"
+                                        rows="1"></textarea>
+                                    </div><!-- /.replyform__input -->
+                                    <div class="replyform__button">
+                                      <button type="submit">
+                                        <img src="/img/replyform__button.svg" alt="" width="24" height="24">
+                                      </button>
+                                    </div><!-- /.replyform__button -->
+                                  </div><!-- /.replyform__main -->
+
+                                  <div class="input-group check-group">
+                                    <label>
+                                      <input type="checkbox" name="check_replyform_1" required="">
+                                      <span class="label">Я даю согласие на публикацию отзыва на сайте и соглашаюсь с <a
+                                          href="/politic/" target="_blank">Политикой конфиденциальности</a></span>
+                                    </label>
+                                  </div>
+                                </div><!-- /.replyform__form -->
+                              </form>
+                            </div><!-- /.replyform -->
+                          </div><!-- /.reviewblock__replyform -->
+                          <!-- ТЗ пункт 3.2 При клике на  "редактировать" https://skrinshoter.ru/saNZlGoRNab появляется заполненная форма отзыва, с возможностью редактировать оценку и заполненную информацию в полях, которые пользователь ранее оставил https://skrinshoter.ru/saNXqwAV28J -->
+                          <div id="modal_replyform_1" class="simple-modal backcall-modal review-modal"
+                            style="display: none;">
+                            <div class="modal-wrapper">
+                              <div>
+                                <p></p>
+                                <div class="modal-title">Оставить отзыв</div>
+                                <div class="modal-content">
+
+                                  <form class="reviewblock-form" name="FORM_REPLYFORM_1" action="#" method="POST"
+                                    enctype="multipart/form-data">
+
+                                    <div class="modal_stars">
+                                      <div class="modal_star">
+                                        <input type="radio" name="modal_rating" value="1" id="replyform_1_star_1">
+                                        <label for="replyform_1_star_1">
+                                          <span class="modal_starimg"></span>
+                                          <span class="modal_startext">Плохо!</span>
+                                        </label>
+                                      </div>
+
+                                      <div class="modal_star">
+                                        <input type="radio" name="modal_rating" value="2" id="replyform_1_star_2">
+                                        <label for="replyform_1_star_2">
+                                          <span class="modal_starimg"></span>
+                                          <span class="modal_startext">Так себе</span>
+                                        </label>
+                                      </div>
+                                      <div class="modal_star">
+                                        <input type="radio" name="modal_rating" value="3" checked
+                                          id="replyform_1_star_3">
+                                        <label for="replyform_1_star_3">
+                                          <span class="modal_starimg"></span>
+                                          <span class="modal_startext">Нормально!</span>
+                                        </label>
+                                      </div>
+                                      <div class="modal_star">
+                                        <input type="radio" name="modal_rating" value="4" id="replyform_1_star_4">
+                                        <label for="replyform_1_star_4">
+                                          <span class="modal_starimg"></span>
+                                          <span class="modal_startext">Хорошо</span>
+                                        </label>
+                                      </div>
+
+                                      <div class="modal_star ">
+                                        <input type="radio" name="modal_rating" value="5" id="replyform_1_star_5">
+                                        <label for="replyform_1_star_5">
+                                          <span class="modal_starimg"></span>
+                                          <span class="modal_startext">Отлично!</span>
+                                        </label>
+                                      </div>
+
+                                    </div>
+                                    <div class="input-group label-group mb-4 modal_input">
+                                      <input placeholder="Преимущества" type="text" name="form_text_1"
+                                        value="то что написал пользователь">
+                                    </div>
+
+                                    <div class="input-group label-group mb-4 modal_input">
+                                      <input placeholder="Недостатки" type="text" name="form_text_2"
+                                        value="то что написал пользователь">
+                                    </div>
+                                    <div class="input-group label-group mb-4 modal_input">
+                                      <textarea placeholder="Комментарии" type="text" name="form_text_3"
+                                        rows="5">то что написал пользователь</textarea>
+                                    </div>
+
+                                    <div class="modal__check">
+                                      <div class="input-group check-group">
+                                        <label>
+                                          <input type="checkbox" name="check_replyform_1" required="">
+                                          <span class="label">Я даю согласие на публикацию отзыва на сайте и соглашаюсь
+                                            с <a href="/politic/" target="_blank">Политикой
+                                              конфиденциальности</a></span>
+                                        </label>
+                                      </div>
+                                      <div class="modal_submit">
+                                        <button type="submit" class="btn-primary">Разместить отзыв</button>
+                                      </div><!-- /.modal_submit -->
+                                    </div><!-- /.modal__check -->
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                           <div class="reviewblock__item reviewblock__nested">
                             <div class="reviewcard">
                               <div class="reviewcard__main">
@@ -4285,23 +4492,23 @@
                                     </button>
                                     <span class="reviewcard__reactiontext ">14</span>
                                   </div><!-- /.reviewcard__reaction -->
-                                  <div class="reviewcard__reaction">
-                                    <button class="btn_react">
+                                  <div class="reviewcard__reaction active_dislike">
+                                    <button class="btn_react ">
                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
+                                        <path 
                                           d="M9.83008 22.3867C10.2125 22.385 10.5952 22.2373 10.8867 21.9453L16.416 16.4043C16.79 16.0293 17 15.5222 17 14.9922V4.99999C17 3.89499 16.105 2.99999 15 2.99999H6.00781C5.20881 2.99999 4.48592 3.47592 4.16992 4.21092L1.16211 11.2129C1.05511 11.4619 1 11.7309 1 12.0019V14C1 15.105 1.895 16 3 16H9.35156L8.35742 20.5644C8.24742 21.0684 8.40448 21.5941 8.77148 21.9551C9.06548 22.2441 9.4477 22.3885 9.83008 22.3867ZM22 15C22.552 15 23 14.552 23 14V3.99999C23 3.44799 22.552 2.99999 22 2.99999H20C19.448 2.99999 19 3.44799 19 3.99999V14C19 14.552 19.448 15 20 15H22Z"
                                           fill="#CED6E2" />
                                       </svg>
 
                                     </button>
-                                    <span class="reviewcard__reactiontext ">0</span>
+                                    <span class="reviewcard__reactiontext">1</span>
                                   </div><!-- /.reviewcard__reaction -->
 
                                 </div><!-- /.reviewcard__reaction -->
                               </div><!-- /.reviewcard__footer -->
                             </div><!-- /.reviewcard -->
-                          </div><!-- /.reviewblock__item -->
+                          </div>
                         </div><!-- /.reviewblock__item -->
                         <div class="reviewblock__item">
                           <div class="reviewcard">
@@ -4340,16 +4547,16 @@
                                     упаковке)) Буду заказывать еще!!!</div>
                                 </div>
                                 <div class="reviewcard__subcontent">
-                                   <div class="reviewcard__theadvantages">
-                                  <div class="reviewcard__contenttitle">Достоинства</div>
-                                  <div class="reviewcard__content">Приятный запах, быстрое действие, </div>
-                                </div>
-                                <div class="reviewcard__disadvantages">
-                                  <div class="reviewcard__contenttitle">Недостатки</div>
-                                  <div class="reviewcard__content">Не обнаружила</div>
-                                </div>
+                                  <div class="reviewcard__theadvantages">
+                                    <div class="reviewcard__contenttitle">Достоинства</div>
+                                    <div class="reviewcard__content">Приятный запах, быстрое действие, </div>
+                                  </div>
+                                  <div class="reviewcard__disadvantages">
+                                    <div class="reviewcard__contenttitle">Недостатки</div>
+                                    <div class="reviewcard__content">Не обнаружила</div>
+                                  </div>
                                 </div><!-- /.reviewcard__subcontent -->
-                               
+
                               </div><!-- /.reviewcard__body -->
                             </div><!-- /.reviewcard__main -->
                             <div class="reviewcard__footer">
@@ -4384,7 +4591,7 @@
                               </div><!-- /.reviewcard__reaction -->
                             </div><!-- /.reviewcard__footer -->
                           </div><!-- /.reviewcard -->
-                         
+
                         </div><!-- /.reviewblock__item -->
                         <div class="reviewblock__item">
                           <div class="reviewcard">
@@ -4423,16 +4630,16 @@
                                     упаковке)) Буду заказывать еще!!!</div>
                                 </div>
                                 <div class="reviewcard__subcontent">
-                                   <div class="reviewcard__theadvantages">
-                                  <div class="reviewcard__contenttitle">Достоинства</div>
-                                  <div class="reviewcard__content">Приятный запах, быстрое действие, </div>
-                                </div>
-                                <div class="reviewcard__disadvantages">
-                                  <div class="reviewcard__contenttitle">Недостатки</div>
-                                  <div class="reviewcard__content">Не обнаружила</div>
-                                </div>
+                                  <div class="reviewcard__theadvantages">
+                                    <div class="reviewcard__contenttitle">Достоинства</div>
+                                    <div class="reviewcard__content">Приятный запах, быстрое действие, </div>
+                                  </div>
+                                  <div class="reviewcard__disadvantages">
+                                    <div class="reviewcard__contenttitle">Недостатки</div>
+                                    <div class="reviewcard__content">Не обнаружила</div>
+                                  </div>
                                 </div><!-- /.reviewcard__subcontent -->
-                               
+
                               </div><!-- /.reviewcard__body -->
                             </div><!-- /.reviewcard__main -->
                             <div class="reviewcard__footer">
@@ -4467,9 +4674,22 @@
                               </div><!-- /.reviewcard__reaction -->
                             </div><!-- /.reviewcard__footer -->
                           </div><!-- /.reviewcard -->
-                         
+
                         </div><!-- /.reviewblock__item -->
                       </div><!-- /.reviewblock__items -->
+
+                      <div class="reviewblock__bottom">
+                        <div class="reviewblock__showmore">
+                          <a href="#modal_review" data-fancybox="" class="btn-border js-simple-modal">
+                            <span><img src="/img/AvailableUpdates.svg" alt=""></span><span>Показать еще</span>
+                          </a>
+                        </div><!-- /.reviewblock__pagintaion -->
+                        <div class="reviewblock__makenewreview">
+                          <a href="#modal_review" data-fancybox="" class="btn-primary js-simple-modal">
+                            Написать отзыв
+                          </a>
+                        </div><!-- /.reviewblock__pagintaion -->
+                      </div><!-- /.reviewblock__bottom -->
                     </div><!-- /.reviewblock__body -->
                   </div><!-- /.reviewblock -->
                 </div>
